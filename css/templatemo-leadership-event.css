@@ -1,0 +1,195 @@
+/*---------------------------------------
+  CUSTOM PROPERTIES (VARIABLES)
+-----------------------------------------*/
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #333333; /* Dark Grey */
+  --secondary-color:              #555555; /* Medium Grey */
+  --section-bg-color:             #F0F0F0; /* Light Grey */
+  --dark-color:                   #000000; /* Black */
+  --navbar-bg-color:              #1A1A1A; /* Charcoal */
+  --p-color:                      #555555; /* Medium Grey for paragraphs */
+  --highlight-icon-color:         #ffffff; /* White for contrast icons */
+
+  --body-font-family:             'DM Sans', sans-serif;
+
+  --h1-font-size:                 62px;
+  --h2-font-size:                 48px;
+  --h3-font-size:                 36px;
+  --h4-font-size:                 32px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  18px;
+  --menu-font-size:               16px;
+  --copyright-text-font-size:     16px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-bold:             700;
+}
+
+body {
+  background: var(--section-bg-color);
+  font-family: var(--body-font-family);
+  color: var(--dark-color);
+}
+
+/*---------------------------------------
+TYPOGRAPHY
+-----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  letter-spacing: -1px;
+}
+
+h1 { font-size: var(--h1-font-size); text-transform: uppercase; letter-spacing: -2px; }
+h2 { font-size: var(--h2-font-size); letter-spacing: -2px; }
+h3 { font-size: var(--h3-font-size); }
+h4 { font-size: var(--h4-font-size); }
+h5 { font-size: var(--h5-font-size); line-height: normal; }
+h6 { font-size: var(--h6-font-size); }
+
+p, ul li {
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+  color: var(--p-color);
+}
+
+a, button {
+  touch-action: manipulation;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover { color: var(--dark-color); }
+
+/*---------------------------------------
+SECTION STYLES
+-----------------------------------------*/
+.section-title {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.schedule-item {
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.schedule-item h4 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.schedule-item p { margin: 0; font-size: 0.9rem; }
+
+.schedule-item time {
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--secondary-color);
+  margin: 20px 0;
+}
+
+/*---------------------------------------
+NAVIGATION
+-----------------------------------------*/
+.navbar {
+  background-color: var(--navbar-bg-color);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/*---------------------------------------
+FOOTER
+-----------------------------------------*/
+footer {
+  background-color: var(--navbar-bg-color);
+  color: var(--white-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-menu-link {
+  color: var(--white-color);
+}
+
+.footer-menu-link:hover {
+  color: var(--highlight-icon-color);
+}
+
+/*---------------------------------------
+BUTTONS AND LINKS
+-----------------------------------------*/
+.custom-btn {
+  background: var(--primary-color);
+  border-radius: 100px;
+  color: var(--white-color);
+  font-size: var(--copyright-text-font-size);
+  font-weight: var(--font-weight-bold);
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+.custom-btn:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+/*---------------------------------------
+RESPONSIVE STYLES
+-----------------------------------------*/
+@media screen and (max-width: 991px) {
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 32px; }
+  h4 { font-size: 28px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
+
+  .section-padding, .site-footer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  .custom-btn {
+      font-size: var(--copyright-text-font-size);
+      padding: 8px 16px;
+  }
+
+  .navbar-brand {
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 { font-size: 38px; }
+  h2 { font-size: 32px; }
+  h3 { font-size: 28px; }
+  h4 { font-size: 24px; }
+  h5 { font-size: 20px; }
+
+  .custom-btn {
+      font-size: 13px;
+      padding: 6px 12px;
+  }
+}
