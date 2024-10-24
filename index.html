@@ -13,6 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-leadership-event.css" rel="stylesheet"> <!-- Updated CSS -->
+    <style>
+        .active-session {
+            background-color: #f0f8ff; /* Light blue background */
+            border-left: 5px solid #007bff; /* Blue border */
+            padding-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,12 +27,17 @@
     <div id="scroll-indicator" style="position: fixed; top: 0; left: 0; width: 0%; height: 4px; background-color: #333333; z-index: 1000;"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="#" class="navbar-brand">World Gospel Impact Church</a>
-            <div class="datetime" id="currentDateTime"></div>
-        </div>
-    </nav>
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" style="color: #f0f8ff;">
+            <!-- Logo -->
+            <img src="./images/WGIC.png" alt="World Gospel Impact Church Logo" style="height: 40px; margin-right: 10px;">
+            World Gospel Impact Church
+        </a>
+        <div class="datetime" id="currentDateTime" style="color: #f0f8ff;"></div>
+    </div>
+</nav>
 
     <script>
         function updateDateTime() {
@@ -42,7 +54,7 @@
     </script>
 
     <!-- Parallax Section -->
-    <div class="parallax-background" style="background-image: url('./images/maria-stewart-p4tj0g-_aMM-unsplash.jpg'); height: 300px;" data-speed="0.3">
+    <div class="parallax-background" style="background-image: url('./images/DSC_3435-1024x683.jpg'); height: 300px;" data-speed="0.3">
         <div class="container text-center">
             <h1 style="color: white; padding-top: 100px;">Welcome to the Strategy Planning Program 2025</h1>
         </div>
@@ -65,46 +77,46 @@
                     <div class="schedule-item">
                         <h4>Arrival and Registration</h4>
                         <p>Welcome and participant registration.</p>
-                        <time>08:30 AM - 09:00 AM</time>
+                        <time data-start="08:30 AM" data-end="09:00 AM">08:30 AM - 09:00 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Opening Prayer and Remarks</h4>
                         <p>Speaker: Ps Ndamane</p>
-                        <time>09:00 AM - 09:15 AM</time>
+                        <time data-start="09:00 AM" data-end="09:15 AM">09:00 AM - 09:15 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Strategy Overview</h4>
                         <p>Speaker: Zama Ndlanzi</p>
-                        <time>09:15 AM - 09:45 AM</time>
+                        <time data-start="09:15 AM" data-end="09:45 AM">09:15 AM - 09:45 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Facilitator Introduction</h4>
                         <p>Speaker: Ps Ndamane introduces Dr Ellenson</p>
-                        <time>09:45 AM - 10:00 AM</time>
+                        <time data-start="09:45 AM" data-end="10:00 AM">09:45 AM - 10:00 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Opening Remarks by Facilitator</h4>
                         <p>Facilitator: Dr Ellenson</p>
-                        <time>10:00 AM - 10:30 AM</time>
+                        <time data-start="10:00 AM" data-end="10:30 AM">10:00 AM - 10:30 AM</time>
                     </div>
                     <div class="divider"></div>
                     <div class="schedule-item">
                         <h4>Tea Break</h4>
-                        <time>10:30 AM - 11:00 AM</time>
+                        <time data-start="10:30 AM" data-end="11:00 AM">10:30 AM - 11:00 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Pillar 1: Social Engagement Through Youth Cells</h4>
                         <p>Ministries: Youth Ministry, Teens Ministry, Children’s Ministry</p>
-                        <time>11:00 AM - 12:00 PM</time>
+                        <time data-start="11:00 AM" data-end="12:00 PM">11:00 AM - 12:00 PM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Q&A and Group Discussion</h4>
-                        <time>12:00 PM - 12:15 PM</time>
+                        <time data-start="12:00 PM" data-end="12:15 PM">12:00 PM - 12:15 PM</time>
                     </div>
                     <div class="divider"></div>
                     <div class="schedule-item">
                         <h4>Lunch Break</h4>
-                        <time>12:15 PM - 1:15 PM</time>
+                        <time data-start="12:15 PM" data-end="1:15 PM">12:15 PM - 1:15 PM</time>
                     </div>
                 </div>
 
@@ -113,42 +125,42 @@
                     <div class="schedule-item">
                         <h4>Arrival and Registration</h4>
                         <p>Welcome and participant registration.</p>
-                        <time>08:30 AM - 09:00 AM</time>
+                        <time data-start="08:30 AM" data-end="09:00 AM">08:30 AM - 09:00 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Opening Prayer and Recap of Day 1</h4>
                         <p>Speaker: Ps Ndamane</p>
-                        <time>09:00 AM - 09:15 AM</time>
+                        <time data-start="09:00 AM" data-end="09:15 AM">09:00 AM - 09:15 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Budget Presentation</h4>
                         <p>Presenter: Finance Ministry</p>
-                        <time>09:15 AM - 09:45 AM</time>
+                        <time data-start="09:15 AM" data-end="09:45 AM">09:15 AM - 09:45 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>2025 Calendar Presentation</h4>
                         <p>Presenter: Admin Ministry</p>
-                        <time>09:45 AM - 10:15 AM</time>
+                        <time data-start="09:45 AM" data-end="10:15 AM">09:45 AM - 10:15 AM</time>
                     </div>
                     <div class="divider"></div>
                     <div class="schedule-item">
                         <h4>Tea Break</h4>
-                        <time>10:15 AM - 10:30 AM</time>
+                        <time data-start="10:15 AM" data-end="10:30 AM">10:15 AM - 10:30 AM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Strategic Planning Session</h4>
                         <p>Facilitator: Dr Ellenson</p>
-                        <time>10:30 AM - 12:00 PM</time>
+                        <time data-start="10:30 AM" data-end="12:00 PM">10:30 AM - 12:00 PM</time>
                     </div>
                     <div class="divider"></div>
                     <div class="schedule-item">
                         <h4>Lunch Break</h4>
-                        <time>12:00 PM - 1:00 PM</time>
+                        <time data-start="12:00 PM" data-end="1:00 PM">12:00 PM - 1:00 PM</time>
                     </div>
                     <div class="schedule-item">
                         <h4>Leadership Development Session</h4>
                         <p>Facilitator: Dr Ellenson</p>
-                        <time>1:00 PM - 2:30 PM</time>
+                        <time data-start="1:00 PM" data-end="2:30 PM">1:00 PM - 2:30 PM</time>
                     </div>
                 </div>
             </div>
@@ -158,7 +170,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container text-center">
-            <p>Copyright © 2024 World Gospel Impact Church | Designed by the Church Team</p>
+            <p style="color: #f0f8ff;">Copyright © 2024 World Gospel Impact Church | Designed By Somakephi Digital Solutions (pty) Ltd</p>
         </div>
     </footer>
 
@@ -168,6 +180,53 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function highlightActiveSession() {
+            const now = new Date();
+            const sessions = document.querySelectorAll('.schedule-item');
+
+            sessions.forEach((session) => {
+                const timeElement = session.querySelector('time');
+                const startTimeString = timeElement.getAttribute('data-start');
+                const endTimeString = timeElement.getAttribute('data-end');
+
+                const [startHours, startMinutes, startPeriod] = parseTime(startTimeString);
+                const [endHours, endMinutes, endPeriod] = parseTime(endTimeString);
+
+                const startTime = new Date(now);
+                const endTime = new Date(now);
+
+                startTime.setHours(convertTo24HourFormat(startHours, startPeriod));
+                startTime.setMinutes(startMinutes);
+
+                endTime.setHours(convertTo24HourFormat(endHours, endPeriod));
+                endTime.setMinutes(endMinutes);
+
+                // Highlight the session if the current time is within the start and end times
+                if (now >= startTime && now <= endTime) {
+                    session.classList.add('active-session');
+                } else {
+                    session.classList.remove('active-session');
+                }
+            });
+        }
+
+        function parseTime(timeString) {
+            const [time, period] = timeString.split(' ');
+            const [hours, minutes] = time.split(':').map(Number);
+            return [hours, minutes, period];
+        }
+
+        function convertTo24HourFormat(hours, period) {
+            if (period === 'PM' && hours < 12) return hours + 12;
+            if (period === 'AM' && hours === 12) return 0;
+            return hours;
+        }
+
+        // Call the function every minute to keep it updated
+        setInterval(highlightActiveSession, 60000);
+        highlightActiveSession();
+    </script>
 </body>
 
 </html>
