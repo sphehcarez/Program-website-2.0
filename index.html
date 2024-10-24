@@ -12,7 +12,7 @@
     <!-- CSS FILES -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-leadership-event.css" rel="stylesheet"> <!-- Updated CSS -->
+    <link href="css/templatemo-leadership-event.css" rel="stylesheet">
     <style>
         .active-session {
             background-color: #f0f8ff; /* Light blue background */
@@ -27,17 +27,15 @@
     <div id="scroll-indicator" style="position: fixed; top: 0; left: 0; width: 0%; height: 4px; background-color: #333333; z-index: 1000;"></div>
 
     <!-- Navigation -->
- <!-- Navigation -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a href="#" class="navbar-brand d-flex align-items-center" style="color: #f0f8ff;">
-            <!-- Logo -->
-            <img src="./images/WGIC.png" alt="World Gospel Impact Church Logo" style="height: 40px; margin-right: 10px;">
-            World Gospel Impact Church
-        </a>
-        <div class="datetime" id="currentDateTime" style="color: #f0f8ff;"></div>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar-brand d-flex align-items-center" style="color: #f0f8ff;">
+                <img src="./images/WGIC.png" alt="World Gospel Impact Church Logo" style="height: 40px; margin-right: 10px;">
+                World Gospel Impact Church
+            </a>
+            <div class="datetime" id="currentDateTime" style="color: #f0f8ff;"></div>
+        </div>
+    </nav>
 
     <script>
         function updateDateTime() {
@@ -170,7 +168,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container text-center">
-            <p style="color: #f0f8ff;">Copyright © 2024 World Gospel Impact Church | Designed By Somakephi Digital Solutions (pty) Ltd</p>
+            <p style="color: #f0f8ff;">Copyright © 2024 World Gospel Impact Church | Designed By Somakuphi Digital Solutions (Pty) Ltd</p>
         </div>
     </footer>
 
@@ -202,7 +200,6 @@
                 endTime.setHours(convertTo24HourFormat(endHours, endPeriod));
                 endTime.setMinutes(endMinutes);
 
-                // Highlight the session if the current time is within the start and end times
                 if (now >= startTime && now <= endTime) {
                     session.classList.add('active-session');
                 } else {
@@ -223,7 +220,6 @@
             return hours;
         }
 
-        // Call the function every minute to keep it updated
         setInterval(highlightActiveSession, 60000);
         highlightActiveSession();
     </script>
